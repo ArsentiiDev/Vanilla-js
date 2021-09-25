@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+}
+
+header {
+    height: 100vh;
+}
+.main-container {
+    width: 95vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter, .timer {
+    font-family:Arial, Helvetica, sans-serif;
+    padding:.2rem;
+    background:rgb(202, 202, 202);
+    border-radius: 5px;
+    margin-left: 1rem;
+
+}
+.title h1,h2 {
+    margin-bottom: 2.5rem;
+}
+.boxes-container {
+    
+    width: 45vw;
+    display:flex;
+    flex-flow:row wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.box {
+    width: 175px;
+    height: 175px;
+    border:1px solid grey;
+}
+.mole {
+    background: url(/mole.jpg) center/cover;
+    cursor: pointer;
+}
+.button {
+    padding: 1rem 2rem;
+    background:transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.button:hover {
+    background:tomato;
+    color:white;
+    transition:all 0.3s linear;
+}
+.speed-button {
+    background:transparent;
+    border:none;
+    font-size: 1.5rem;
+    padding: .3rem;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.speed-button:focus {
+    background:tomato;
+    color:white;
+    border-radius: 5px;
+    transition:all 0.3s linear;
+}
+@media screen and (max-width:768px){
+    .boxes-container {
+        width:80vw;
+    }
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+@media  screen and (max-width:576px){
+    .boxes-container {
+        width:80vw;
+    }
+    .box {
+        width: 120px;
+        height: 120px;
+    }
+}
