@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nav {
+    box-shadow: 2px 2px 5px lightblue;
+}
+.header {
+    
+    height: auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5rem 1rem;
+}
+.burger {
+    background:transparent;
+    border:transparent;
+    font-size: 1.7rem;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.burger:hover {
+    transform:rotate(180deg);
+}
+.nav__links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.nav__link {
+    list-style: none;
+}
+.nav__link a {
+    text-decoration: none;
+    display:block;
+    width:100%;
+    color:black;
+    padding:1rem 1rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+} 
+.nav__link a:hover {
+    padding:1.5rem;
+    color:violet;
+    font-size: 1.3rem;
+    background:turquoise;
+}
+
+.social__links {
+    display:none;
+}
+.showBar {
+    height: auto;
+    
+}
+
+@media screen and (min-width:800px){
+    .nav {
+        padding: 1rem 1.5rem;
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .nav__links {
+        height: 100%;
+        display:flex;
+    }
+    .nav__links a {
+        padding:0;
+        margin: 0 1.5rem;
+    }
+    .nav__links a:hover {
+        padding:0;
+        background:transparent;
+    }
+    .header {
+        padding:0;
+    }
+    .burger {
+        display:none;
+    }
+    .social__links{
+        display:flex;
+        justify-content:space-around;
+        font-size: 1.4rem;
+        cursor:pointer;
+        list-style: none;
+    }
+    .social__link i {
+        margin: 0 .5rem;
+    }
+    
+}
